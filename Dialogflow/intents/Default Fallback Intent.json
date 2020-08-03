@@ -1,0 +1,55 @@
+{
+  "id": "d8a1972f-75ac-4436-8a8f-f76cc2e6a6e2",
+  "name": "Default Fallback Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.unknown",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "2",
+          "platform": "facebook",
+          "title": "Qual tipo de notícia você quer ver?",
+          "replies": [
+            "⚽ Esportes",
+            "⚖️ Política",
+            "🎥 Entretenimento",
+            "🤩 Famosos"
+          ],
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "speech": [
+            "Lamento, mas não entendi.",
+            "Desculpe, mas não compreendi.",
+            "Poxa, não entendi o que você deseja.",
+            "Não consegui entender, desculpe."
+          ],
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

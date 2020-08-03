@@ -1,0 +1,84 @@
+{
+  "id": "ea531c89-c6d0-41e2-9edd-d56ffe7a4313",
+  "name": "News Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "b57d12cb-4f81-49dd-8e28-213f515bcfbd",
+          "name": "theme",
+          "required": false,
+          "dataType": "@theme",
+          "value": "$theme",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "platform": "facebook",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "speech": [
+            "Estas são as notícias de $theme que encontrei:"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "1",
+          "platform": "facebook",
+          "imageUrl": "https://img.r7.com/images/samu-06012019180129334?dimensions\u003d460x305",
+          "subtitle": "Sua Descrição",
+          "title": "Uma Notícia",
+          "buttons": [
+            {
+              "postback": "https://www.google.com/",
+              "text": "Ver Notícia"
+            }
+          ],
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "condition": ""
+        },
+        {
+          "type": "2",
+          "platform": "facebook",
+          "title": "Você quer ver mais notícias?",
+          "replies": [
+            "⚽ Esportes",
+            "⚖️ Política",
+            "🎥 Entretenimento",
+            "🤩 Famosos"
+          ],
+          "textToSpeech": "",
+          "lang": "pt-br",
+          "condition": ""
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "facebook": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
